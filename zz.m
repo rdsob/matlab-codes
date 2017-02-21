@@ -46,4 +46,5 @@ function zz_mtx = zz(N)
     
     % Final zig zag matrix
     zz_mtx = fliplr(zz_mtx);
+    zz_mtx = zz_mtx';
 end
