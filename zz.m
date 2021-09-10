@@ -4,17 +4,17 @@
 % used in image compression patterns, like JPEG.
 %
 % Input:
-% N: the size of the matriz
+% N: the size of the matrix
 %
 % Output:
-% zz_mtx: the zig zag matriz
+% zz_mtx: the zig zag matrix
 %
 % Raíza Oliveira 
 % E-mail: rdso1@de.ufpe.br
 % May 22, 2016
 
 function zz_mtx = zz(N)
-    % Creating a NULL matriz
+    % Creating a NULL matrix
     zz_mtx = zeros(N);
     
     % Generating the first column
@@ -45,6 +45,5 @@ function zz_mtx = zz(N)
     end
     
     % Final zig zag matrix
-    zz_mtx = fliplr(zz_mtx);
-    zz_mtx = zz_mtx';
+    zz_mtx = fliplr(zz_mtx)';
 end
